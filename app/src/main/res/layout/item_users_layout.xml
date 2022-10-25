@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:textSize="13sp"
+                        tools:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNameValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        tools:text="Test İsim" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Mail: "
+                        android:textSize="13sp"
+                        tools:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMailValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        tools:text="test@gmail.com" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
